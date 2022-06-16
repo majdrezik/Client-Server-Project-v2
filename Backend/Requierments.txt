@@ -1,0 +1,8 @@
+request
+crypto
+express
+cors
+mongoose
+dotenv
+nodemailer
+express-recaptcha
