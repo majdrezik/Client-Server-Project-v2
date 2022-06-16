@@ -1,0 +1,19 @@
+*{
+	box-sizing:border-box;
+}
+
+.clm{
+	float:left;
+	width: 50%;
+	padding:3px;
+}
+
+.clm img{
+	height:300px;
+}
+
+@media screen and (max-width: 600px) {
+#onlypc{
+	display: None;
+}
+}
