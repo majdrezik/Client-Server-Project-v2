@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { encrypt, decrypt } = require('../crypto');
 var Recaptcha = require('express-recaptcha').RecaptchaV2;
-var recaptcha = new Recaptcha('6LdZEOUZAAAAABOhim6Lc8XSEb34nczBkgB2LeOe', '6LdZEOUZAAAAABOhim6Lc8XSEb34nczBkgB2LeOe');
+var recaptcha = new Recaptcha('6Ld96NsgAAAAAAlXWHCOVbZFEQbSozTvLsJhRPYL', '6Ld96NsgAAAAABRnrtu7WcQfIT-H5p8l2U7x9l57');
 var Request = require("request");
 let PromoCode = require('../models/PromoCode.model');
 let User = require('../models/user.model');
