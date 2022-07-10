@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { encrypt, decrypt } = require('../crypto');
 var Recaptcha = require('express-recaptcha').RecaptchaV2;
-var recaptcha = new Recaptcha('6Ld96NsgAAAAAAlXWHCOVbZFEQbSozTvLsJhRPYL', '6Ld96NsgAAAAABRnrtu7WcQfIT-H5p8l2U7x9l57');
+var recaptcha = new Recaptcha('6LdZ-dsgAAAAAJfcMxEe_9WynHZVSRnnr8HE9PBF', '6LdZ-dsgAAAAAIPAO1XkWYae_GgH2CwbPGaPtVel');
 var Request = require("request");
 let PromoCode = require('../models/PromoCode.model');
 let User = require('../models/user.model');
@@ -383,7 +383,7 @@ console.log(error)
 router.route('/reset-password').post((req, res) => {
   const email = req.body.email;
   var recaptcha_url = "https://www.google.com/recaptcha/api/siteverify?";
-  recaptcha_url += "secret=" + '6LdZEOUZAAAAABOhim6Lc8XSEb34nczBkgB2LeOe' + "&";
+  recaptcha_url += "secret=" + '6LdZ-dsgAAAAAIPAO1XkWYae_GgH2CwbPGaPtVel' + "&";
   recaptcha_url += "response=" + req.body.recaptcha ;
   Request(recaptcha_url, function(error, resp, body) {
       body = JSON.parse(body);
@@ -447,7 +447,7 @@ router.route('/add').post((req, res) => {
   const promocode = req.body.promocode;
 
   var recaptcha_url = "https://www.google.com/recaptcha/api/siteverify?";
-  recaptcha_url += "secret=" + '6LdZEOUZAAAAABOhim6Lc8XSEb34nczBkgB2LeOe' + "&";
+  recaptcha_url += "secret=" + '6LdZ-dsgAAAAAIPAO1XkWYae_GgH2CwbPGaPtVel' + "&";
   recaptcha_url += "response=" + req.body.recaptcha ;
   Request(recaptcha_url, function(error, resp, body) {
       body = JSON.parse(body);
@@ -534,7 +534,7 @@ router.route('/getuser').post((req, res) => {
   const password = encrypt(req.body.password);
   console.log(email + " " + password);
   var recaptcha_url = "https://www.google.com/recaptcha/api/siteverify?";
-  recaptcha_url += "secret=" + '6LdZEOUZAAAAABOhim6Lc8XSEb34nczBkgB2LeOe' + "&";
+  recaptcha_url += "secret=" + '6LdZ-dsgAAAAAIPAO1XkWYae_GgH2CwbPGaPtVel' + "&";
   recaptcha_url += "response=" + req.body.recaptcha ;
   Request(recaptcha_url, function(error, resp, body) {
       body = JSON.parse(body);

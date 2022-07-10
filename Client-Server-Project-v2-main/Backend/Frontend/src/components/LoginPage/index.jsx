@@ -130,8 +130,8 @@ export default function LoginPage({ match }) {
                                                 Login
                                             </button>
                                             <hr/>
-                                            <ReCAPTCHA sitekey="6LdZEOUZAAAAABOhim6Lc8XSEb34nczBkgB2LeOe" onChange={onChange}/>
-                                            {/* <div class="g-recaptcha" data-sitekey="6LdZEOUZAAAAABOhim6Lc8XSEb34nczBkgB2LeOe"></div> */}
+                                            <ReCAPTCHA sitekey="6LdZ-dsgAAAAAJfcMxEe_9WynHZVSRnnr8HE9PBF" onChange={onChange}/>
+                                            {/* <div class="g-recaptcha" data-sitekey="6LdZ-dsgAAAAAJfcMxEe_9WynHZVSRnnr8HE9PBF"></div> */}
                                         </form>
                                         <hr/>
                                         <div class="text-center">

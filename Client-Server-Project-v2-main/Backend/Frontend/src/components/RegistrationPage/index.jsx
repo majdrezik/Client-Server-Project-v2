@@ -126,7 +126,7 @@ export default class RegistrationPage extends Component {
                                     Register Account
                                     </button>
                                     <hr/>
-                                    <ReCAPTCHA sitekey="6LdZEOUZAAAAABOhim6Lc8XSEb34nczBkgB2LeOe" onChange={this.onChange}/>
+                                    <ReCAPTCHA = "6LdZ-dsgAAAAAJfcMxEe_9WynHZVSRnnr8HE9PBF" onChange={this.onChange}/>
                                 </form>
                                 <hr/>
                                 <div class="text-center">
