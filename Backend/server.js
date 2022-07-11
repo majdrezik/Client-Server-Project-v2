@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-const uri = "mongodb+srv://client-server-project:client-server@cluster0.adl3q.mongodb.net/test";
+const uri = "XXXXXXXXXXXXXXXXXXXXXXXXXXX";
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true }
 );
 const connection = mongoose.connection;
